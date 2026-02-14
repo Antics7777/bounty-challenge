@@ -42,7 +42,7 @@ COPY migrations ./migrations
 RUN cargo build --release --bin bounty-server --bin bounty-health-server
 
 # Stage 4: Runtime image
-FROM debian:12.12-slim
+FROM debian:12.13-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
